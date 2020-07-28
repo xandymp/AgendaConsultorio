@@ -31,4 +31,13 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('{id}', 'PessoaController@update');
         Route::delete('{id}', 'PessoaController@destroy');
     });
+
+    Route::group(['prefix' => 'agendamento'], function () {
+        Route::get('/', 'AgendamentoController@index');
+        Route::get('/novo', 'AgendamentoController@create');
+        Route::post('/', 'AgendamentoController@store');
+        Route::get('/editar/{id}', 'AgendamentoController@edit');
+        Route::put('{id}', 'AgendamentoController@update');
+        Route::delete('{id}', 'AgendamentoController@destroy');
+    });
 });

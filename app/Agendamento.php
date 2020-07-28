@@ -14,6 +14,8 @@ class Agendamento extends Model
     protected $fillable = [
         'data_consulta',
         'observacoes',
+        'medico_id',
+        'paciente_id',
     ];
 
     public function paciente()
