@@ -18,7 +18,7 @@ class CreateAgendamentosTable extends Migration
             $table->unsignedBigInteger('medico_id');
             $table->unsignedBigInteger('paciente_id');
             $table->dateTime('data_consulta');
-            $table->string('observacoes');
+            $table->string('observacoes')->nullable();
             $table->timestamps();
             $table->softDeletes();
 
