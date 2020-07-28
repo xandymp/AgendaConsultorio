@@ -15,4 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')
+    ->name('home');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    });
+
+    Route::group(['prefix' => 'pessoa'], function () {
+        Route::get('/', 'PessoaController@index');
+        Route::get('/novo', 'PessoaController@create');
+        Route::post('/', 'PessoaController@store');
+        Route::get('/editar/{id}', 'PessoaController@edit');
+        Route::put('{id}', 'PessoaController@update');
+        Route::delete('{id}', 'PessoaController@destroy');
+    });
+});
