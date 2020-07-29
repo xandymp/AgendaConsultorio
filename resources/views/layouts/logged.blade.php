@@ -80,7 +80,7 @@
         <nav id="sidebar">
             <ul class="list-unstyled components">
                 <li>
-                    <a href="/dashboard">
+                    <a {{ url('/dashboard') }}>
                         <i class="fa fa-home" ></i>
                     </a>
                 </li>
