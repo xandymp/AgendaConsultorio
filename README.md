@@ -52,3 +52,7 @@ Para as rotas de INSERT e UPDATE deve-se utilizar um JSON conforme no formato ab
 }
 ```
 
+## Notas para avaliação
+
+Gostaria e agradecer pela oportunidade oferecida.
+É a primeira vez que faço um teste com prazo tão pequeno, fiquei satisfeito com o resultado apesar do tempo limite ser menor, pois estava habituado ao prazo de uma semana para realizar um teste. Foi uma ótima experiência e espero que gostem do resultado.
