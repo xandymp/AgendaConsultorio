@@ -52,7 +52,7 @@ Para as rotas de INSERT e UPDATE deve-se utilizar um JSON conforme no formato ab
 }
 ```
 
-- Para utilização da API diretamente do servidor questá online deve-se utilizar /public/api/{Rota}
+- Para utilização da API diretamente do servidor que está online deve-se utilizar /public/api/{Rota}
 
 ## Notas para avaliação
 
