@@ -52,7 +52,10 @@ Para as rotas de INSERT e UPDATE deve-se utilizar um JSON conforme no formato ab
 }
 ```
 
+- Para utilização da API diretamente do servidor questá online deve-se utilizar /public/api/{Rota}
+
 ## Notas para avaliação
 
-Gostaria e agradecer pela oportunidade oferecida.
+Gostaria e agradecer pela oportunidade oferecida. Também gostaria de me desculpar por não ter utilizado o padrão Git-Flow separando as features em branches durante o desenvolvimento, Quando li o documento não havia notado a segunda página (fiquei empolgado para começar) e como é um projeto de apenas um desenvolvedor não vi a necessidade de separar cada nova feature em branches.
+
 É a primeira vez que faço um teste com prazo tão pequeno, fiquei satisfeito com o resultado apesar do tempo limite ser menor, pois estava habituado ao prazo de uma semana para realizar um teste. Foi uma ótima experiência e espero que gostem do resultado.
