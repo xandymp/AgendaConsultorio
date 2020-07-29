@@ -81,4 +81,46 @@ class PessoaController extends Controller
         Pessoa::destroy($id);
         return redirect('pessoa');
     }
+
+    public function listarMedicos()
+    {
+        return Pessoa::all()
+            ->where('tipo', 1)
+            ->whereNull('deleted_at')
+            ->sortBy('nome')
+            ->sortByDesc('tipo');
+    }
+
+    public function inserirMedico(Request $request)
+    {
+        Pessoa::create($request->all());
+    }
+
+    public function mostrarMedico($id)
+    {
+        return Pessoa::where('id', $id)
+            ->where('tipo', 1)
+            ->whereNull('deleted_at')
+            ->first();
+    }
+
+    public function atualizarMedico(Request $request, $id)
+    {
+        $medico = Pessoa::where('id', $id)
+            ->where('tipo', 1)
+            ->whereNull('deleted_at')
+            ->first();
+
+        $medico->update($request->all());
+    }
+
+    public function deletarMedico($id)
+    {
+        $medico = Pessoa::where('id', $id)
+            ->where('tipo', 1)
+            ->whereNull('deleted_at')
+            ->first();
+
+        $medico->delete();
+    }
 }
